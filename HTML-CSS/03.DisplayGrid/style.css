@@ -1,0 +1,38 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #a8f;
+}
+
+h1{
+    text-align: center;
+}
+
+h2, p{
+    margin-top: 0;
+}
+
+.item{
+    background-color: #f7f7f7;
+    border: 1px solid #e7e7e7;
+    padding: 20px;
+    display: grid;
+    
+}
+
+.comprar{
+    background-color: #a8f;
+    text-decoration: none;
+    color: #103;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /*Tamanho das colunas*/
+    gap: 20px; /*Espaçamento entre os blocos*/
+}
+
+/* align-content organiza na vertical */
+/* justify-content organiza na horizontal */
+/* place-content organiza na horizontal e na vertical */

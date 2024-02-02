@@ -1,0 +1,70 @@
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    /*place-items: center; Ele sempre pega como parâmetro o maior*/
+    /*grid-template-rows: 300px auto; 
+    /*grid-auto-rows: 200px; Qual vai ser o tamanho de todas as outras linhas que ainda não foram definidas*/
+    /*grid-template-columns: repeat(autofit, minmax(150px, auto)); Determina automaticamente que todas as proximas colunas criadas teram no minimo 150px e no maximo auto */
+}
+
+.titulo{
+    grid-column: 1 / -1;
+}
+
+.container{
+    display: grid;
+    place-items: start;
+    place-self: start; /* FIXAR NO INICIO*/
+    gap: 20px;
+}
+
+/*
+.preco{
+    grid-area: 2 / 2; /* escolho exatamente onde vai ficar, linha e coluna 
+}
+
+img, .descricao{
+    grid-column: 1 / -1; Quero expandir a imagem para com que ela apareça até a última coluna
+}
+
+.comprar{
+    grid-column: 2;
+}
+*/
+/* Estilos Gerais */
+
+body{
+    margin: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img{
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+h1{
+    margin: 0;
+    font-size: 48px;
+    line-height: 1;
+}
+
+p{
+    margin: 0;
+    font-size: 20px;
+}
+
+.preco{
+    background-color: #ddd;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.comprar{
+    background-color: #a8f;
+    color: #103;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+}
