@@ -1,0 +1,22 @@
+h1{
+    margin: 0;
+    padding: 10px;
+    background-color: lightblue;
+}
+
+.index1{
+    position: relative;
+    background-color: greenyellow;
+    top: 20px;
+    z-index: 0; /* -1 Fica em baixo do outro elemento*/
+}
+
+.index2{
+    position: absolute;
+    background-color: lightcoral;
+    top: 60px;
+    z-index: 0;
+}
+
+/*O ultimo elemento sempre ficara por cima*/
+/* Pelo z-index eu consigo determinar em fica em cima, o 2 fica em cima do 1..., e tbm tem q esta position relative*/
