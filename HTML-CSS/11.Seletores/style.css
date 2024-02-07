@@ -1,0 +1,38 @@
+.lista li:first-child{
+    background-color: yellowgreen;
+}
+
+.lista li:nth-child(2){
+    background-color: yellow;
+}
+
+.lista li:nth-child(3){
+    background-color: orange;
+}
+
+.lista li:nth-child(4){
+    background-color: orangered;
+}
+
+.lista li:last-child{
+    background-color: red;
+}
+
+/* Pares */
+.lista li:nth-child(even){
+    font-size: 2rem;
+}
+
+/* Ímpares */
+.lista li:nth-child(odd){
+    font-size: 0.5rem;
+}
+
+/* .lista li:nth-child(3n)  Vai pular de 3 em 3 linhas  */
+
+
+/* Nega esses elementos */
+.lista li:not(:first-child, :last-child){
+    background-color: white;
+    font-size: 2rem;
+}

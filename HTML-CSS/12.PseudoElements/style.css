@@ -1,0 +1,37 @@
+/* h1::before{
+    content: "ANTES";
+}
+
+h1::after{
+    content: "DEPOIS";
+} */
+
+/*Pai: position:relative, Filho: position:absolute*/
+
+h1::after{
+    content: "";
+    background-color: #caf;
+    display: block;
+    width: 40px;
+    height: 4px;
+}
+
+li{
+    font-size: 1.5rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+li::before{
+    content: "";
+    height: 8px;
+    width: 8px;
+    display: inline-block;
+    background: linear-gradient(#caf, white);
+    border: 2px solid #caf;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+
+/* Também existe o first line e o first letter*/
